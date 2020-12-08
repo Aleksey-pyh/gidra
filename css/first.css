@@ -378,6 +378,9 @@ h3{
     display: flex;
     flex-wrap: wrap;
 }
+.thirdRow{
+    margin-bottom: 25px;
+}
 .firstRow{
     justify-content: space-between;
 }
