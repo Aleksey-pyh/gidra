@@ -325,6 +325,21 @@ h3{
     width: calc(50% - 3px);
     padding: 30px 0;
     border-bottom: 1px solid #E6E6E6;
+    position: relative;
+}
+.catalog_item::before{
+    content: '+';
+    position: absolute;
+    bottom: -9px;
+    left: calc(50% - 3px);
+    color: #126DAE;
+}
+.catalog_item::after{
+    content: '+';
+    position: absolute;
+    bottom: -9px;
+    left: -2px;
+    color: #126DAE;
 }
 .firstRow,.secondRow,.thirdRow,.fourRow{
     display: flex;
@@ -447,6 +462,9 @@ h3{
     right: calc(25% + 3px);
     background-color: #E6E6E6;
     z-index: -1;
+}
+.container._border{
+    padding-bottom: 30px;
 }
 .container._border h2{
     margin: 0;
