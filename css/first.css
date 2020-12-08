@@ -316,3 +316,139 @@ h3{
     height: 100%;
     padding: 0 15px;
 }
+/*catalog*/
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+}
+.catalog_item{
+    width: calc(50% - 3px);
+    padding: 30px 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+.firstRow,.secondRow,.thirdRow,.fourRow{
+    display: flex;
+    flex-wrap: wrap;
+}
+.firstRow{
+    justify-content: space-between;
+}
+.descItem{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+.descItem h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #114773;
+    padding-right: 15px;
+    margin: 7px 0;
+}
+.descItem p{
+    font-size: 14px;
+    line-height: 161%;
+    color: #202020;
+    padding-right: 15px;
+}
+.secondRow{
+    margin: 30px 0;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.blueBold{
+    color: #114773;
+    font-weight: bold;
+}
+.cost{
+    min-width: 50%;
+}
+.cost .blueBold{
+    font-size: 20px;
+}
+.article{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 169%;
+    color: #444444;
+    flex: 0 0 15%;
+}
+.descArticle{
+    font-size: 12px;
+    line-height: 169%;
+    color: #444444;
+    flex: 0 0 85%;
+}
+.descArticle p{
+    padding-right: 30px;
+}
+.fourRow{
+    flex-direction: column;
+    align-items: center;
+}
+.more{
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #444444;
+    color: #444444;
+    padding-top: 35px;
+}
+.catalog .coast{
+    background-color: #126DAE;
+    border: 2px solid #126DAE;
+}
+.catalog .coast:hover{
+    background-color: transparent;
+    color: #126DAE;
+}
+.fourRow img{
+    width: calc(100% - 30px);
+    align-self: flex-start;
+}
+.more:hover{
+    opacity: 0.7;
+}
+._border{
+    border-left: 1px solid #E6E6E6;
+    border-right: 1px solid #E6E6E6;
+    position: relative;
+}
+._border::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 1px;
+    left: calc(50% - 3px);
+    background-color: #E6E6E6;
+    z-index: -1;
+}
+._border::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 1px;
+    left: calc(25% - 3px);
+    background-color: #E6E6E6;
+    z-index: -1;
+}
+.container._border::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 1px;
+    right: calc(25% - 3px);
+    background-color: #E6E6E6;
+    z-index: -1;
+}
+.container._border h2{
+    margin: 0;
+    padding: 50px 0;
+}
