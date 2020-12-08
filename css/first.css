@@ -444,7 +444,7 @@ h3{
     bottom: 0;
     height: 100%;
     width: 1px;
-    right: calc(25% - 3px);
+    right: calc(25% + 3px);
     background-color: #E6E6E6;
     z-index: -1;
 }
