@@ -1,3 +1,14 @@
+var but = document.querySelectorAll('.more');
+var block = document.querySelectorAll('.mask');
+function show(elem) {
+  var mask = elem.previousSibling.previousElementSibling
+  if (mask.classList.contains('show')){
+    mask.classList.remove('show');
+    elem.textContent = 'Развернуть';
+  }
+  else{mask.classList.add('show');
+  elem.textContent = 'Свернуть';}
+}
 particlesJS('particles-js',
   
   {
