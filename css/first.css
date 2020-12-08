@@ -437,8 +437,8 @@ h3{
     background-color: #E6E6E6;
     z-index: -1;
 }
-.container._border::before{
-    content: '';
+.lastBor{
+    position: absolute;
     position: absolute;
     top: 0;
     bottom: 0;
