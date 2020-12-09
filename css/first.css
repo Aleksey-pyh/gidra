@@ -358,6 +358,7 @@ h3{
     bottom: -35px;
     left: -38px;
     position: absolute;
+    transform-origin: 36px 50px;
 }
 .catalog .catalog_item:last-child .firstRow::before{
     content: "";
@@ -851,4 +852,42 @@ footer ._row{
     font-size: 14px;
     line-height: 17px;
     color: #747474;
+}
+.container._border:hover .catalog_item::before,.container._border:hover .fourRow::before,.container._border:hover .fourRow::after{  
+    animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform:rotate(0);;
+    }
+    20% {
+        transform:rotate(45deg);;
+    }
+    30% {
+        transform:rotate(0);;
+    }
+    40% {
+        transform:rotate(-25deg);;
+    }
+    50% {
+        transform:rotate(60deg);;
+    }
+    60% {
+        transform:rotate(0);;
+    }
+    70% {
+        transform:rotate(90deg);;
+    }
+    80% {
+        transform:rotate(0);;
+    }
+    90% {
+        transform:rotate(180deg);;
+    }
+    100% {
+        transform:rotate(0);;
+    }
+}
+.contactBlock:hover .tel::after{
+    animation: rotate 1.5s linear infinite;
 }
