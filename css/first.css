@@ -133,6 +133,8 @@ body{
 .container{
     max-width: 1280px;
     margin: 0 auto;
+    position: relative;
+    z-index: 3;
 }
 .wrapperForCanvas{
     position: absolute;
@@ -261,7 +263,7 @@ h2{
     background-color: #003866;
     color: white;
 }
-.coast{
+.coast,.flesh{
     background: #003866;
     border-radius: 5px;
     border: 2px solid #003866;
@@ -271,7 +273,7 @@ h2{
     margin-top: 45px;
     display: inline-block;
 }
-.coast:hover{
+.coast:hover,.flesh:hover{
     background: transparent;
     color: #003866;
 }
@@ -742,6 +744,7 @@ h3{
 ._circleBg{
     position: relative;
     background-color: #DCDCDC;
+    padding-bottom: 45px;
 }
 ._circleBg::before{
     content: "";
@@ -749,7 +752,7 @@ h3{
     width: 300px;
     height: 300px;
     background: url(../images/bottomCircle.png) center no-repeat;
-    top: -150px;
+    top: -60px;
     left:0;
     z-index: 1;
 }
@@ -758,8 +761,94 @@ h3{
     position: absolute;
     width: 300px;
     height: 300px;
-    background: url(../images/bottomCircle.png)center no-repeat;
-    bottom: -150px;
+    background: url(../images/bottomCircle2.png)center no-repeat;
+    bottom: -200px;
     right:0;
     z-index: 1;
+}
+.getFlesh{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0;
+}
+.separator{
+    max-width: 50%;
+    position: relative;
+}
+.separator::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #E3E3E3;
+    width: 3px;
+    height: 100%;
+}
+.separator h2{
+    text-align: start;
+    padding-top: 0;
+}
+.fleshPic{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+footer{
+    padding-top: 30px;
+    border-top: 3px solid #E3E3E3;
+}
+footer ._row{
+    justify-content: space-between;
+}
+._foot,.mail{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 144.69%;
+    text-align: right;
+    color: #114773;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+.contactFoot{
+    display: flex;
+    flex-direction: column;
+}
+.mail{
+    position: relative;
+    padding-left: 25px;
+}
+.tel._foot::after{
+    top: 7px;
+}
+.mail::before{
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: url(../images/email.png)center no-repeat;
+}
+.dataBlock h3{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #114773;
+}
+.dataBlock p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 189.69%;
+    color: #114773;
+}
+._bottom{
+    margin: 20px 0;
+}
+._bottom a,._bottom p{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #747474;
 }
