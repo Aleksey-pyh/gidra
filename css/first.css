@@ -247,7 +247,7 @@ h2{
     line-height: 36px;
     text-align: center;
     color: #114773;
-    margin: 60px 0 30px;
+    padding: 60px 0 30px;
 }
 .btn{
     padding: 10px 30px;
@@ -448,6 +448,14 @@ h3{
     color: #6F6F6F;
     z-index: 2;
 }
+.fourRow::after{
+    content: '+';
+    position: absolute;
+    bottom: -39px;
+    left: -4px;
+    color: #6F6F6F;
+    z-index: 1;
+}
 .more{
     background: transparent;
     border: none;
@@ -543,4 +551,211 @@ h3{
 .container._border h2{
     margin: 0;
     padding: 50px 0;
+}
+/*other block*/
+.contactBlock_bottom{
+    text-align: center;
+}
+.contactBlock_bottom p{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #114773;
+    margin: 15px 0;
+}
+.contactBlock_bottom .blackColor{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #444444;
+}
+.contactBlock_bottom p a{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 19px;
+    color: #114773;
+    text-decoration: none;
+}
+.contactBlock_bottom p .normal{
+    font-weight: normal;
+}
+.buttContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.buttContainer .socialLink:first-child{
+    margin-right: 30px;
+}
+.socialLink{
+    display: flex;
+    justify-content: center;
+    width: 225px;
+    height: 55px;
+    border: 2px solid #126DAE;
+    border-radius: 5px;
+    text-decoration: none;
+    align-items: center;
+}
+.socialLink p{
+    color: #000000;
+}
+.socialLink img{
+    margin-right: 15px;
+    transition: all .6s;
+}
+.socialLink:hover img{
+    animation: upAnim 1.5s linear infinite;
+}
+.socialLink:hover p{
+    animation: changeColor 2s linear infinite;
+}
+@keyframes changeColor {
+    0% {
+        color: #000000;;
+    }
+    100% {
+        color: #114773;;
+    }
+}
+@keyframes upAnim {
+    0% {
+        transform:translateY(0);;
+    }
+    10% {
+        transform:translateY(-7px);;
+    }
+    20% {
+        transform:translateY(0);;
+    }
+    30% {
+        transform:translateY(-5px);;
+    }
+    40% {
+        transform:translateY(0);;
+    }
+    50% {
+        transform:translateY(-3px);;
+    }
+    60% {
+        transform:translateY(0);;
+    }
+    70% {
+        transform:translateY(-2px);;
+    }
+    80% {
+        transform:translateY(0);;
+    }
+    90% {
+        transform:translateY(-1px);;
+    }
+    100% {
+        transform:translateY(0);;
+    }
+}
+.partsField{
+    display: flex;
+    justify-content: space-between;
+}
+.partsItem ul li{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 166%;
+    color: #126DAE;
+}
+.partsItem ul li span{
+    color: #000000;
+}
+.partsDesc{
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 45px
+}
+.partsField::after{
+    content: "";
+    position: absolute;
+    bottom: -150px;
+    left: -300px;
+    width: 464px;
+    height: 528px;
+    background: url(../images/bottomBg1.png) center no-repeat;
+    z-index: -1;
+}
+._relative{
+    position: relative;
+}
+.slidersContainer{
+    display: flex;
+}
+.slidersContainerRigth,.slideContainerLeft{
+    max-width: 50%;
+}
+.slideLeft{
+    padding-right: 40px;
+}
+.slideRigth{
+    /* padding-left: 40px; */
+}
+.slide_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slide_content img{
+    max-height: 168px;
+}
+.textContainer{
+    padding-left: 30px;
+}
+.textContainer p{
+    margin: 8px 0;
+}
+/*arrow*/
+.arrowRigth,.arrowLeft{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 25px 0;
+}
+.next_rigth,.prev_rigth,.next_left,.prev_left{
+    width: 32px;
+    height: 29px;
+    margin-right: 10px;
+    background-color: #126DAE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    color: white;
+    cursor: pointer;
+}
+.next_rigth:hover,.prev_rigth:hover,.next_left:hover,.prev_left:hover{
+    color: #126DAE;
+    background-color: #DDDDDD;
+}
+._circleBg{
+    position: relative;
+    background-color: #DCDCDC;
+}
+._circleBg::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url(../images/bottomCircle.png) center no-repeat;
+    top: -150px;
+    left:-80px
+}
+._circleBg::after{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url(../images/bottomCircle.png)center no-repeat;
+    bottom: -150px;
+    right:-80px;
 }

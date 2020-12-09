@@ -9,6 +9,14 @@ function show(elem) {
   else{mask.classList.add('show');
   elem.textContent = 'Свернуть';}
 }
+$('.slidersRigth').slick({
+  prevArrow: $('.prev_rigth'),
+  nextArrow: $('.next_rigth')
+});
+$('.slidersLeft').slick({
+  prevArrow: $('.prev_left'),
+  nextArrow: $('.next_left')
+});
 particlesJS('particles-js',
   
   {
