@@ -690,6 +690,8 @@ h3{
 }
 .slidersContainer{
     display: flex;
+    position: relative;
+    z-index: 2;
 }
 .slidersContainerRigth,.slideContainerLeft{
     max-width: 50%;
@@ -748,7 +750,8 @@ h3{
     height: 300px;
     background: url(../images/bottomCircle.png) center no-repeat;
     top: -150px;
-    left:-80px
+    left:-80px;
+    z-index: 1;
 }
 ._circleBg::after{
     content: "";
@@ -758,4 +761,5 @@ h3{
     background: url(../images/bottomCircle.png)center no-repeat;
     bottom: -150px;
     right:-80px;
+    z-index: 1;
 }
