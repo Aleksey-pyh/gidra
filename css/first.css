@@ -203,6 +203,7 @@ header .container{
     background:url(../images/tel.png) center no-repeat;
     height: 15px;
     width: 15px;
+    animation: rotateTel 1s linear infinite;
 }
 .contactBlock{
     display: flex;
@@ -349,6 +350,7 @@ h3{
     bottom: -35px;
     right: -38px;
     position: absolute;
+    animation: rotateY 3s linear infinite;
 }
 .catalog .catalog_item:nth-child(3) .firstRow::before{
     content: "";
@@ -359,6 +361,7 @@ h3{
     left: -38px;
     position: absolute;
     transform-origin: 36px 50px;
+    animation: rotateY 3s linear infinite;
 }
 .catalog .catalog_item:last-child .firstRow::before{
     content: "";
@@ -368,6 +371,7 @@ h3{
     bottom: -35px;
     right: -38px;
     position: absolute;
+    animation: rotateY 3s linear infinite;
 }
 .catalog_item::before{
     content: '+';
@@ -687,6 +691,7 @@ h3{
     height: 528px;
     background: url(../images/bottomBg1.png) center no-repeat;
     z-index: -1;
+    animation: rotateY 3s linear infinite;
 }
 ._relative{
     position: relative;
@@ -715,6 +720,13 @@ h3{
 }
 .textContainer{
     padding-left: 30px;
+}
+.textContainer ul li{
+    padding-left: 1em;
+    color: #126DAE;
+}
+.textContainer ul li span{
+    color: #000000;
 }
 .textContainer p{
     margin: 8px 0;
@@ -853,8 +865,22 @@ footer ._row{
     line-height: 17px;
     color: #747474;
 }
-.container._border:hover .catalog_item::before,.container._border:hover .fourRow::before,.container._border:hover .fourRow::after{  
+.catalog_item::before, .fourRow::before,.fourRow::after{  
     animation: rotate 1.5s linear infinite;
+}
+._footBg{
+    overflow: hidden;
+    position: relative;
+}
+._footBg::before{
+    content: '';
+    position: absolute;
+    background: url(../images/footBg.png)center no-repeat;
+    width: 290px;
+    height: 280px;
+    bottom: 0;
+    right: 0;
+    animation: rotateY 3s linear infinite;
 }
 @keyframes rotate {
     0% {
@@ -888,6 +914,55 @@ footer ._row{
         transform:rotate(0);;
     }
 }
-.contactBlock:hover .tel::after{
-    animation: rotate 1.5s linear infinite;
+@keyframes rotateTel {
+    0% {
+        transform:rotate(0);;
+    }
+    20% {
+        transform:rotate(45deg);;
+    }
+    30% {
+        transform:rotate(0);;
+    }
+    40% {
+        transform:rotate(-25deg);;
+    }
+    50% {
+        transform:rotate(0);;
+    }
+    60% {
+        transform:rotate(45deg);;
+    }
+    70% {
+        transform:rotate(0);;
+    }
+    80% {
+        transform:rotate(-15deg);;
+    }
+    90% {
+        transform:rotate(0);;
+    }
+    100% {
+        transform:rotate(0);;
+    }
+}
+@keyframes rotateY {
+    0% {
+        transform:rotate3d(0,1,0, 0);;
+    }
+    20% {
+        transform:rotate3d(0,1,0, 72deg);;
+    }
+    40% {
+        transform:rotate3d(0,1,0, 144deg);;
+    }
+    60% {
+        transform:rotate3d(0,1,0, 216deg);;
+    }
+    80% {
+        transform:rotate3d(0,1,0, 288deg);;
+    }
+    100% {
+        transform:rotate3d(360deg);;
+    }
 }
